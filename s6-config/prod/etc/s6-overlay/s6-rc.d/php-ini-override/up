@@ -1,0 +1,1 @@
+gomplate --input-dir=/usr/local/etc/php/conf.d.templates --output-dir=/usr/local/etc/php/conf.d

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+COMMAND=${1:-bash}
+
+docker exec -it nginx-php $COMMAND
