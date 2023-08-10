@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo ""
+echo "======== BUILD PROD ========";
+
+./build-prod
+
+echo ""
+echo "======== BUILD DEV ========";
+
+./build-dev
+
+echo ""
+echo "======== UPLOAD ========";
+
+docker push kubi84/nginx-php8.2:latest
+docker push kubi84/nginx-php8.2:dev

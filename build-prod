@@ -1,5 +1,5 @@
 #!/bin/bash
 
-IMAGE="kubi84/nginx-php8.2:prod"
+IMAGE="kubi84/nginx-php8.2:latest"
 
 docker build -t $IMAGE --target "prod" .
