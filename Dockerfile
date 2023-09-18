@@ -74,6 +74,8 @@ ENV PHP_OPCACHE_JIT="tracing"
 ENV PHP_OPCACHE_VALIDATE_TIMESTAMPS="1"
 ENV PHP_OPCACHE_REVALIDATE_FREQ="0"
 
+RUN chown -R www-data:www-data /var/www
+
 WORKDIR /var/www/project
 
 EXPOSE 80
